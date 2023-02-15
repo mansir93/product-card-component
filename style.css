@@ -17,6 +17,12 @@ body{
 
     height: 450px;
 }
+.mobile-product-img{
+    display: none;
+}
+.body{
+    margin: 20px;
+}
 .price{
     font-weight: bold;
     font-size: 14px;
@@ -24,6 +30,7 @@ body{
 }
 
 .btn{
+    align-items: center;
     background-color: green;
     width: 250px;
     border: none;
@@ -40,3 +47,14 @@ background-color: green;
   .attribution a {
     color: hsl(228, 45%, 44%);
   }
+
+  @media screen and (max-width: 760px) {
+    .product-img {
+     display: none;
+    }
+    .mobile-product-img{
+        border-radius: 20px 20px 0 0 ;
+        display: block;
+        width: inherit;
+    }
+}
