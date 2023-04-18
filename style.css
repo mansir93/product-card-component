@@ -1,60 +1,74 @@
-body{
-    background-color: hsl(30, 38%, 92%);
+body {
+  font-size: 14px;
+  background-color: hsl(30, 38%, 92%);
 }
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
 }
-.card{
-    border-radius: 20px;
-    width: 600px;
+.card {
+  margin: 20px;
+  border-radius: 20px;
+  width: 600px;
+}
+.product-img {
+  border-radius: 20px 0 0 20px;
+  height: 450px;
+}
+.mobile-product-img {
+  display: none;
+}
+.body {
+  padding: 20px;
+  text-align: left;
+}
+.heading {
+  letter-spacing: 5px;
+}
+.col-md-6 h1,
+p {
+  margin: 10px auto;
+}
+.price {
+  font-weight: bold;
+  font-size: 18px;
+  color: green;
+  margin: 20px auto;
+}
 
+.btn {
+  align-items: center;
+  color: white;
+  padding: 10px;
+  width: 250px;
+  background-color: green;
 }
-.product-img{
-    border-radius: 20px 0 0 20px;
-
-    height: 450px;
-}
-.mobile-product-img{
-    display: none;
-}
-.body{
-    margin: 20px;
-}
-.price{
-    font-weight: bold;
-    font-size: 14px;
-    color: green;
-}
-
-.btn{
-    align-items: center;
-    background-color: green;
-    width: 250px;
-    border: none;
-    margin: auto;
-}
-.btn:hover{
-background-color: green;
+.btn:hover {
+  color: white;
+  background-color: green;
 }
 .attribution {
-    margin: 10px auto;
-    font-size: 11px;
-    text-align: center;
-  }
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-  }
+  margin-top: 20px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
-  @media screen and (max-width: 760px) {
-    .product-img {
-     display: none;
-    }
-    .mobile-product-img{
-        border-radius: 20px 20px 0 0 ;
-        display: block;
-        width: inherit;
-    }
+@media screen and (max-width: 768px) {
+  .card {
+    border-radius: 20px;
+    max-width: 400px;
+  }
+  .product-img {
+    display: none;
+  }
+  .mobile-product-img {
+    border-radius: 20px 20px 0 0;
+    display: block;
+    width: inherit;
+  }
 }
